@@ -19,7 +19,7 @@ body{
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: transparent;
+    background: #1f242d;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,7 +78,7 @@ body{
 .home-img img{
     max-width: 450px;
     margin-right: 100px;
-    animation-name: floating;
+    animation: floating;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
@@ -156,8 +156,49 @@ body{
     opacity: 0;
 }
 
+/* About Me Section */
 
+.about .container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10px 0;
+}
 
+.about .about-title{
+    font-size: 56px;
+}
+
+.about .about-desc{
+    font-size: 18px;
+    margin-left: 300px;
+}
+
+.about-desc p{
+    color: turquoise;
+}
+/* 
+.about h2{
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 0.7s;
+    opacity: 0;
+} */
+
+/* Animations */
+
+.slideInRight{
+    animation: slideRight 1.2s both;
+}
+
+.slideInLeft{
+    animation: slideLeft 1.2s both;
+}
+
+.slideInTop{
+    animation: slideTop 1.2s both;
+}
 
 @keyframes slideRight{
     0%{
