@@ -336,6 +336,34 @@ header{
     color: turquoise;
 }
 
+/* contact me */
+
+.contact-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10px 0;
+    margin-left: 50px;
+}
+
+.contact-title{
+    font-size: 56px;
+}
+
+.contact-content{
+    max-width: 600px;
+    align-items: center;
+    margin-right: 350px;
+}
+
+.contact-content a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
 /* Animations */
 
 .slideInRight{

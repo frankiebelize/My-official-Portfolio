@@ -66,3 +66,16 @@ const observerProject = new IntersectionObserver(entries => {
 })
 
 observerProject.observe(document.querySelector('.project-container'));
+
+//contact me
+
+const observerContact = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            document.querySelectorAll(".contact-title")[0].classList.add("slideInRight");
+            document.querySelectorAll(".contact-content")[0].classList.add('slideInLeft');
+        }
+    })
+})
+
+observerContact.observe(document.querySelector('.contact-container'));
