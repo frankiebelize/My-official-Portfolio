@@ -10,18 +10,18 @@
 </head>
 <body>
     <!-- Header and Nav Bar -->
-    <header class="header">
+    <header>
         <a href="#" class="logo">My Portfolio</a>
         <nav class="navbar">
-            <a href="#" style="--i:1" class="active">Home</a>
+            <a href="#home" style="--i:1" class="active">Home</a>
             <a href="#about" style="--i:2">About</a>
-            <a href="#" style="--i:3">Skill</a>
-            <a href="#" style="--i:4">Project</a>
-            <a href="#" style="--i:5">Contact Me</a>
+            <a href="#skills" style="--i:3">Skill</a>
+            <a href="#project" style="--i:4">Project</a>
+            <a href="#contact" style="--i:5">Contact Me</a>
         </nav>
     </header>
     <!-- Home -->
-<section class="home">
+<section id="home">
     <div class="home-content">
         <h3>Hello, It's Me</h3>
         <h1>Franco Alberto Folgarait</h1>
@@ -38,10 +38,10 @@
         <img src="./assets/img/logo.png" alt="logo">
     </div>
 </section>
------------------------------------------------------
+<!-- ----------------------------------------------------- -->
 <!-- About Me -->
-<section class="about">
-<div class="container">
+<section id="about">
+<div class="about-container">
     <div class="about-title">
         <h2>About<br><span>Me</span></h2>
         <img src="#" alt="">
@@ -68,6 +68,179 @@
 
    
 </div>
+</section>
+<!-- Skills -->
+<section id="skills">
+    <div class="skills-container">
+        <div class="skills-title">
+            <h3>My Skills</h3>
+        </div>
+        <div class="skill-content">
+            <div class="skills">
+                <div class="skill">
+                <div class="skill-container">
+                    <img src="./assets/img/skills/html.png" alt="html">
+                </div>
+                <h5>HTML5</h5>
+            </div>
+            <div class="skill">
+                <div class="skill-container">
+                    <img src="./assets/img/skills/C++.png" alt="C++">
+                </div>
+                <h5>C++</h5>
+            </div>
+            <div class="skill">
+                <div class="skill-container">
+                    <img src="./assets/img/skills/CSS.png" alt="CSS">
+                </div>
+                    <h5>CSS</h5>
+                </div>
+                <div class="skill">
+                <div class="skill-container">
+                    <img src="./assets/img/skills/GQL.png" alt="GQL">
+                </div>
+                    <h5>GQL</h5>
+                </div>
+                <div class="skill">
+                <div class="skill-container">
+                    <img src="./assets/img/skills/MongoDB.png" alt="MongoDB">
+                </div>
+                    <h5>MongoDB</h5>
+                </div>
+                <div class="skill">
+                <div class="skill-container">
+                    <img src="./assets/img/skills/mysql.png" alt="mysql">
+                </div>
+                    <h5>MySQL</h5>
+                </div>
+                <div class="skill">
+                <div class="skill-container">
+                    <img src="./assets/img/skills/Node.png" alt="node">
+                </div>
+                    <h5>Node.js</h5>
+                </div>
+                <div class="skill">
+                <div class="skill-container">
+                    <img src="./assets/img/skills/react.png" alt="react">
+                </div>
+                    <h5>react</h5>
+            </div>
+            <div class="skill">
+            <div class="skill-container">
+                <img src="./assets/img/skills/JavaScript.png" alt="js">
+            </div>
+                <h5>JavaScript</h5>
+            </div>
+        </div>
+    
+    </div>
+</section>
+<section id="project">
+    <div class="project-container">
+        <div class="project-title">
+            <h3>My Projects</h3>
+        </div>
+        <div class="project-content">
+            <div class="project-card-container">
+                <img src="./assets/img/Projects/projectOne.png" alt="">
+                <h3>LiveSports USA</h3>
+                <p>Coding Bootcamp Project 1. LiveSports website to view results of NBA Teams</p>
+                <ul>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/frankiebelize/Livesports-USA.git">source code</a>
+                    <a href="https://cornejod.github.io/Group-Project/">demo</a>
+                </div>
+            </div>
+
+            <div class="project-card-container">
+                <img src="./assets/img/Projects/projectTwo.png" alt="">
+                <h3>My Workouts</h3>
+                <p>Coding Bootcamp Project 2. My workout website using to track and post workouts</p>
+                <ul>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>MYSQL</li>
+                    <li>Node.js</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/lindseycarlson23/my-workouts.git">source code</a>
+                    <a href="https://my-workouts-c1e5314d5b06.herokuapp.com/">demo</a>
+                </div>
+            </div>
+
+            <div class="project-card-container">
+                <img src="./assets/img/Projects/projectThree.png" alt="">
+                <h3>My Fantasy Draft</h3>
+                <p>Coding Bootcamp Project 3. MYfantasyDraft website use to search players by team and adding them to your roster</p>
+                <ul>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>MYSQL</li>
+                    <li>Node.js</li>
+                    <li>React</li>
+                    <li>MongoDB</li>
+                    <li>NOSQL</li>
+                    <li>GraphQL</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/DevonMcfarlen/MyFantasyDraft.git">source code</a>
+                    <a href="https://myfantasydraft-3b76c1450b6a.herokuapp.com">demo</a>
+                </div>
+            </div>
+
+            <div class="project-card-container">
+                <img src="./assets/img/Projects/StarbucksTheme.gif" alt="">
+                <h3>Starbucks theme Responsive Landing Page</h3>
+                <p>A responsive Landing page that changes color and image base on which icon you click. Built with HTML, CSS and JavaScript. Honestly one of my favorite projects to make.</p>
+                <ul>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/frankiebelize/landing-page03.git">source code</a>
+                    <a href="https://frankiebelize.github.io/landing-page03/">demo</a>
+                </div>
+            </div>
+
+            <div class="project-card-container">
+                <img src="./assets/img/Projects/React-Calculator.gif" alt="">
+                <h3>My Calculator-React</h3>
+                <p>Calculator made with react and JavaScript. Made all logics manually</p>
+                <ul>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>React</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/frankiebelize/-calculator-react.git">source code</a>
+                    <a href="https://startling-llama-8ef8ae.netlify.app/">demo</a>
+                </div>
+            </div>
+
+            <div class="project-card-container">
+                <img src="./assets/img/Projects/LandingPage02.gif" alt="">
+                <h3>Responsive Landing Page Template</h3>
+                <p>A responsive Landing page template using only css and html</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+                <div class="project-links">
+                    <a href="https://github.com/frankiebelize/landing-page02.git">source code</a>
+                    <a href="https://frankiebelize.github.io/landing-page02/">demo</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </section>
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 <script src="script.js"></script>

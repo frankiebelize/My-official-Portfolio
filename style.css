@@ -5,15 +5,19 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Nerko One;
+    scroll-behavior: smooth;
 }
 
-body{
+section{
+    min-height: 100vh;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background:#1f242d;
     color: white;
-    margin-left: 100px;
 }
 
-.header{
+header{
     position: fixed;
     top: 0;
     left: 0;
@@ -53,7 +57,7 @@ body{
     color: turquoise;
 }
 
-.home{
+#home{
     position: relative;
     width: 100%;
     height: 100vh;
@@ -65,6 +69,7 @@ body{
 
 .home-content{
     max-width: 600px;
+    margin-left: 50px;
 }
 
 .home-content h3{
@@ -158,20 +163,21 @@ body{
 
 /* About Me Section */
 
-.about .container{
+.about-container{
     position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 50px 10px 0;
+    margin-left: 50px;
 }
 
-.about .about-title{
+.about-title{
     font-size: 56px;
 }
 
-.about .about-desc{
+.about-desc{
     font-size: 18px;
     margin-left: 300px;
 }
@@ -179,12 +185,156 @@ body{
 .about-desc p{
     color: turquoise;
 }
-/* 
-.about h2{
-    animation: slideBottom 1s ease forwards;
-    animation-delay: 0.7s;
-    opacity: 0;
-} */
+
+/* Skills */
+
+.skills-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10px 0;
+    margin-left: 50px;
+}
+
+.skills-title{
+    font-size: 56px;
+}
+
+.skill-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 14px;
+}
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 11px;
+}
+
+.skill h5{
+    font-size: 18px;
+    color: turquoise;
+}
+
+.skills{
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 37px;
+}
+
+.skill-container{
+    background-color:whitesmoke;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+}
+
+.skill-container img{
+    width: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 11px;
+}
+
+/* Project */
+
+.project-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 50px 10px 0;
+    margin-left: 50px;
+    justify-content: space-between;
+}
+
+.project-title{
+    font-size: 56px;
+    margin-top: -80%;
+}
+
+.project-content{
+    margin-top: 37px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.project-card-container{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 16px 14px 0 turquoise;
+    padding: 18px 24px;
+    max-width: 345px;
+    max-height: 700px;
+    min-height: 700px;
+}
+
+.project-card-container img{
+    margin-bottom: 26px;
+}
+
+.project-card-container h3{
+    font-size: 25px;
+}
+
+.project-card-container p{
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+.project-card-container ul{
+    width: 100%;
+    margin-top: 14px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+    list-style: none;
+}
+
+.project-card-container li{
+    font-size: 25px;
+    font-weight: 400;
+    border-radius: 1000px;
+    background-color: turquoise;
+    padding: 2px 22px;
+}
+
+.project-card-container .project-links{
+    width: 100%;
+    margin-top: 26px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-card-container .project-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    border-radius: 100px;
+    padding: 1px 22px;
+}
+
+.project-card-container .project-links a:hover{
+    color: turquoise;
+}
 
 /* Animations */
 
@@ -198,6 +348,10 @@ body{
 
 .slideInTop{
     animation: slideTop 1.2s both;
+}
+
+.fadeIn{
+    animation: fadeIn 5s;
 }
 
 @keyframes slideRight{
@@ -270,4 +424,9 @@ body{
         transform: scale(1);
         opacity: 1;
     }
+}
+
+@keyframes fadeIn{
+    0% {opacity: 0; }
+    100% {opacity: 1;}
 }
